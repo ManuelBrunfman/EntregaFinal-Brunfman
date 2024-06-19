@@ -18,7 +18,6 @@ $fontFamily: Verdana, Geneva, Tahoma, sans-serif;
 @mixin TituloSecciones (){
     font-size: $tituloSeccion;
     padding: 8px;
-    align-items: center;
     text-align: center;
 }
 @mixin size ($width: 100%, $height: null) {

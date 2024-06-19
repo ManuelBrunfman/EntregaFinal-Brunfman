@@ -1,23 +1,28 @@
-
 .nav-bar {
-  
-
-& ul  {
- @include gap-size();
-}
 
 
-li {
-    @include size (100%);
-    @include align-items-column (space-around, center);
-    border: 2px solid $colorBordes;
-
-    &:hover {
-        background-color: $colorBordes;
+    ul {
+        @include gap-size();
     }
-   
 
+    li {
+        @include size (100%);
+        @include align-items-column (space-around, center);
+        border: 2px solid $colorBordes;
+
+        &:hover {
+            background-color: $colorBordes;
+        }
+    }
 }
 
-}
+@media (min-width: 768px) {
+    .nav-bar {
+ul { 
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+       
+    }
 
+}
