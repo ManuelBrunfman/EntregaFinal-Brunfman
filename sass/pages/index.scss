@@ -1,0 +1,25 @@
+.vision-motivacion-contenedor {
+    margin-top: 25px;
+
+    h2 { @include TituloSecciones }
+
+    .vision-motivacion-video-parrafo-contenedor {
+        position: relative;
+        padding-bottom: 60%;
+        
+
+        .video-vision-motivacion {
+            @include size();
+            position:absolute;
+        }
+        .parrafo-vision-motivacion {
+            position: absolute;
+            @include size (100%,100%);
+            @include align-items-column (center);
+            z-index: 10;
+            color: $colorTextoClaro;
+            padding: 30px;
+
+        }
+    }
+}

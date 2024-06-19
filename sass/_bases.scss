@@ -1,13 +1,27 @@
-/*variables*/
+/*variables colores*/
 $colorFondoPrincipal: #FFFFFF;
 $colorFondoSecciones: #E0E0E0;
 $colorTexto: #000000;
+$colorTextoClaro: #ffffff;
 $colorBordes: #B0B0B0;
+
+/*variables fuentes*/
+
+$tituloPrincipal: 2rem;
+$tituloSeccion: 1.75rem;
+$fontFamily: Verdana, Geneva, Tahoma, sans-serif;
+
+
 
 
 /*mixin*/
-
-@mixin size ($width, $height: null) {
+@mixin TituloSecciones (){
+    font-size: $tituloSeccion;
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+}
+@mixin size ($width: 100%, $height: null) {
     width: $width;
     height: $height;
 }
