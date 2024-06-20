@@ -1,5 +1,7 @@
 
 
 footer {
-    background-color: $colorFondoPrincipal;
+    position: absolute;
+    background-color: $colorFondoPrincipal; 
+    bottom: 0;
 }

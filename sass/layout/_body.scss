@@ -1,5 +1,6 @@
 
 body {
+    @include size (100%, 100vh);
     padding: 10px;
     background-color: hsl(180, 100%, 97%);
     font-family: $fontFamily;

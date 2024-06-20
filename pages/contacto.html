@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel Brunfman contacto</title>
-    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -16,14 +16,14 @@
             <h1> Manuel Brunfman</h1>
             <img class="header-logo" src="../img/imagen-logo.jpg" alt="logo">
         </div>
-        <nav>
+        <nav class="nav-bar">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="mis-proyectos.html">MIS PROYECTOS</a></li>
                 <li><a href="expriencia-y-conocimiento.html">CONOCIMIENTO</a></li>
                 <li><a href="testimonios-y-resenas.html">TESTIMONIOS</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
-        
+
         </nav>
 
 
@@ -31,24 +31,34 @@
 
 
     <main>
-        <h2> formulario de contacto</h2>
 
-        <form action="form.php" method="POST">
-            <div>
-                <label for="name"> nombre y apellido</label>
-                <input type="text" name="name" id="name" placeholder="jose perez">
-            </div>
-            <div>
-                <label for="email"> correo electrónico </label>
-                <input type="text" name="email" id="email" placeholder="xxxxx@correo.com">
-            </div>
-            <div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
+        <section class="contenedor-formulario">
 
-            <input type="submit" value="Enviar">
+            <h2> formulario de contacto</h2>
 
-        </form>
+            <form class="contacto-form" action="form.php" method="POST">
+                <div class="label-input-form">
+                    <label for="name"> nombre y apellido</label>
+                    <input type="text" name="name" id="name" placeholder="jose perez">
+                </div>
+                <div class="label-input-form">
+                    <label for="email"> correo electrónico </label>
+                    <input type="text" name="email" id="email" placeholder="xxxxx@correo.com">
+                </div>
+                <div class="label-input-form">
+                    <label for="text-area"> comentarios </label>
+                    <textarea name="text-area" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    
+
+                    <input class="botton-form-comtacto" type="submit" value="Enviar">
+
+                </div>
+
+            </form>
+        </section>
     </main>
 
     <footer>
