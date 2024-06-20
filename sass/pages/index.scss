@@ -2,9 +2,6 @@
 .index-vision-motivacion-contenedor {
     margin-top: 25px;
 
-    h2 {
-        @include TituloSecciones
-    }
 
     .vision-motivacion-video-parrafo-contenedor {
         position: relative;
@@ -31,12 +28,6 @@
 
 /*SECCION MIS-PROYECTOS*/
 .index-mis-proyectos-contenedor {
-
-    h2 {
-        @include TituloSecciones
-    }
-
-    ;
 
     .index-imagenes-mis-proyectos {
 
@@ -107,6 +98,8 @@
             @include TituloSecciones;
             padding-bottom: 5px;
         }
+
+        .index-imagenes-mis-proyectos {}
 
         .index-misproyectos-parrafos {
 

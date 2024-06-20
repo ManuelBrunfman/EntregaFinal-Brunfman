@@ -18,6 +18,12 @@ a {
   color: #000000;
 }
 
+h2 {
+  font-size: 1.75rem;
+  padding: 8px;
+  text-align: center;
+}
+
 .nav-bar ul {
   display: grid;
   gap: 5px;
@@ -38,6 +44,67 @@ a {
   .nav-bar ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+  }
+}
+.card-contenedor-column .card-imagen-column {
+  width: 100%;
+}
+.card-contenedor-column .card-parrafo-column {
+  padding: 20px 0px;
+}
+
+@media (min-width: 768px) {
+  .card-contenedor-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    display: grid;
+    gap: 40px;
+    padding: 10px;
+  }
+  .card-contenedor-column .h2-card-column {
+    grid-column: 1/4;
+    font-size: 1.75rem;
+    padding: 8px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .card-contenedor-column .card-parrafo {
+    padding: 20px 0px;
+  }
+}
+.card-contenedor-row .card-imagen-row {
+  width: 100%;
+}
+.card-contenedor-row .card-parrafo {
+  padding: 20px 0px;
+}
+
+@media (min-width: 768px) {
+  .card-contenedor-row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 20px;
+    display: grid;
+    gap: 40px;
+    padding: 10px;
+  }
+  .card-contenedor-row .h2-card-row {
+    grid-column: 1/4;
+    font-size: 1.75rem;
+    padding: 8px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .card-contenedor-row .card-imagen-row {
+    width: 25rem;
+  }
+  .card-contenedor-row .card-parrafo {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 body {
@@ -73,7 +140,6 @@ header {
   }
 }
 footer {
-  position: absolute;
   background-color: #FFFFFF;
   bottom: 0;
 }
@@ -81,11 +147,6 @@ footer {
 /*SECCION VISION - MOTIVACION*/
 .index-vision-motivacion-contenedor {
   margin-top: 25px;
-}
-.index-vision-motivacion-contenedor h2 {
-  font-size: 1.75rem;
-  padding: 8px;
-  text-align: center;
 }
 .index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor {
   position: relative;
@@ -109,11 +170,6 @@ footer {
 }
 
 /*SECCION MIS-PROYECTOS*/
-.index-mis-proyectos-contenedor h2 {
-  font-size: 1.75rem;
-  padding: 8px;
-  text-align: center;
-}
 .index-mis-proyectos-contenedor .index-imagenes-mis-proyectos {
   width: 100%;
 }
@@ -173,11 +229,6 @@ footer {
 }
 .contenedor-formulario {
   padding: 50px;
-}
-.contenedor-formulario h2 {
-  font-size: 1.75rem;
-  padding: 8px;
-  text-align: center;
 }
 .contenedor-formulario .contacto-form .label-input-form {
   display: grid;

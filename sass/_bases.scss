@@ -14,6 +14,8 @@ $fontFamily: Verdana, Geneva, Tahoma, sans-serif;
 
 
 
+
+
 /*mixin*/
 @mixin TituloSecciones (){
     font-size: $tituloSeccion;
@@ -61,3 +63,5 @@ a {
     text-decoration: none;
     color: $colorTexto;
 }
+
+h2 { @include TituloSecciones();}
