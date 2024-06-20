@@ -35,15 +35,19 @@ h2 {
   justify-content: space-around;
   align-items: center;
   border: 2px solid #B0B0B0;
+  transition: transform 2.5s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .nav-bar li:hover {
   background-color: #B0B0B0;
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
   .nav-bar ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    transform: translateY(-5px);
   }
 }
 .card-contenedor-column .card-imagen-column {

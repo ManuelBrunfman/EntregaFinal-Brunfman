@@ -9,9 +9,14 @@
         @include size (100%);
         @include align-items-column (space-around, center);
         border: 2px solid $colorBordes;
+        transition: transform 2.5s ease;
+        transition: background-color 0.3s ease, color 0.3s ease; 
 
         &:hover {
             background-color: $colorBordes;
+           
+            transform: scale(1.05);
+           
         }
     }
 }
@@ -21,6 +26,7 @@
 ul { 
             display: grid;
             grid-template-columns: repeat(5, 1fr);
+            transform: translateY(-5px); 
         }
        
     }
