@@ -1,0 +1,29 @@
+.experiencia-contenedor {
+    padding: 15px;
+    @include size (100%, 100%);
+    
+    
+
+    .experiencia-parrafo {
+      
+        padding: 40px;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .experiencia-contenedor {
+        padding: 15px;
+        @include align-items-column (center);
+        @include size (100%, 100%);
+
+        .experiencia-parrafo {
+            padding: 40px;
+            text-align: justify;
+            @include size (100%, 100%);
+        }
+    }
+
+
+}
