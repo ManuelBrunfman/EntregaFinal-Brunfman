@@ -20,6 +20,8 @@ a {
 
 h2 {
   font-size: 1.75rem;
+  color: #0b0606;
+  font-weight: bold;
   padding: 8px;
   text-align: center;
 }
@@ -57,7 +59,7 @@ header {
   }
 }
 footer {
-  background-color: #FFFFFF;
+  background-color: #1c1b1b;
   bottom: 0;
 }
 
@@ -71,12 +73,12 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid #B0B0B0;
+  border: 2px solid #0c0a0a;
   transition: transform 2.5s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .nav-bar li:hover {
-  background-color: #B0B0B0;
+  background-color: #0c0a0a;
   transform: scale(1.05);
 }
 
@@ -105,9 +107,6 @@ footer {
   }
   .card-contenedor-column .h2-card-column {
     grid-column: 1/4;
-    font-size: 1.75rem;
-    padding: 8px;
-    text-align: center;
     padding-bottom: 5px;
   }
   .card-contenedor-column .card-parrafo {
@@ -132,9 +131,6 @@ footer {
   }
   .card-contenedor-row .h2-card-row {
     grid-column: 1/4;
-    font-size: 1.75rem;
-    padding: 8px;
-    text-align: center;
     padding-bottom: 5px;
   }
   .card-contenedor-row .card-imagen-row {
@@ -150,15 +146,27 @@ footer {
 }
 /*SECCION VISION - MOTIVACION*/
 .index-vision-motivacion-contenedor {
-  margin-top: 25px;
+  margin: 0px;
+  height: 38.125rem;
 }
 .index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor {
   position: relative;
-  padding-bottom: 60%;
+  height: 35rem;
 }
 .index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor .video-vision-motivacion {
   width: 100%;
   position: absolute;
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 .index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor .parrafo-vision-motivacion {
   position: absolute;
@@ -169,8 +177,12 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 10;
-  color: #ffffff;
+  color: #110e0e;
   padding: 30px;
+  font-size: clamp(0.8rem, 4.5vw, 1.5rem);
+  top: 0;
+  color: whitesmoke;
+  text-align: center;
 }
 
 /*SECCION MIS-PROYECTOS*/
@@ -185,18 +197,18 @@ footer {
   /*SECCION VISION - MOTIVACION*/
   .index-vision-motivacion-contenedor {
     margin-top: 25px;
-  }
-  .index-vision-motivacion-contenedor h2 {
-    font-size: 1.75rem;
-    padding: 8px;
-    text-align: center;
+    height: 56.82vw;
   }
   .index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor {
+    width: 100%;
+    height: 100%;
     position: relative;
-    padding-bottom: 60%;
+    padding-bottom: 0%;
+    height: 51.99vw;
   }
   .index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor .video-vision-motivacion {
     width: 100%;
+    height: 100%;
     position: absolute;
   }
   .index-vision-motivacion-contenedor .vision-motivacion-video-parrafo-contenedor .parrafo-vision-motivacion {
@@ -208,8 +220,8 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 10;
-    color: #ffffff;
-    padding: 300px;
+    padding: 100px;
+    font-size: 3vw;
   }
   /*SECCION MIS-PROYECTOS*/
   .index-mis-proyectos-contenedor {
@@ -222,10 +234,6 @@ footer {
   }
   .index-mis-proyectos-contenedor h2 {
     grid-column: 1/4;
-    font-size: 1.75rem;
-    padding: 8px;
-    text-align: center;
-    padding-bottom: 5px;
   }
   .index-mis-proyectos-contenedor .index-misproyectos-parrafos {
     padding: 20px 0px;

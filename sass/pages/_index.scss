@@ -1,16 +1,30 @@
 /*SECCION VISION - MOTIVACION*/
 .index-vision-motivacion-contenedor {
-    margin-top: 25px;
+    margin: 0px;
+    height: 38.125rem;
 
 
     .vision-motivacion-video-parrafo-contenedor {
         position: relative;
-        padding-bottom: 60%;
+        
+        height: 35rem;
 
 
         .video-vision-motivacion {
             @include size();
             position: absolute;
+            height: 35rem;
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            
+        }
+
+        .overlay {
+            position: absolute;
+            @include size(100%, 100%);
+            background-color: rgba(0, 0, 0, 0.5); // Negro con 50% de opacidad
+            z-index: 5;
         }
 
         .parrafo-vision-motivacion {
@@ -20,6 +34,11 @@
             z-index: 10;
             color: $colorTextoClaro;
             padding: 30px;
+            font-size: clamp(0.8rem, 4.5vw, 1.5rem);
+            top: 0;
+            color: whitesmoke;
+          
+            text-align: center;
 
         }
     }
@@ -50,18 +69,20 @@
 
     .index-vision-motivacion-contenedor {
         margin-top: 25px;
+         height: 56.82vw;
 
-        h2 {
-            @include TituloSecciones
-        }
+
 
         .vision-motivacion-video-parrafo-contenedor {
+            @include size (100%, 100%);
             position: relative;
-            padding-bottom: 60%;
+            padding-bottom: 0%;
+            height: 51.99vw;
+            
 
 
             .video-vision-motivacion {
-                @include size();
+                @include size (100%, 100%);
                 position: absolute;
             }
 
@@ -70,8 +91,10 @@
                 @include size (100%, 100%);
                 @include align-items-column (center);
                 z-index: 10;
-                color: $colorTextoClaro;
-                padding: 300px;
+                padding: 100px;
+                font-size: 3vw;
+              
+              
 
             }
         }
@@ -95,8 +118,7 @@
 
         h2 {
             grid-column: 1/4;
-            @include TituloSecciones;
-            padding-bottom: 5px;
+           
         }
 
         .index-imagenes-mis-proyectos {}

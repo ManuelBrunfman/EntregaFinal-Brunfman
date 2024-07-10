@@ -24,7 +24,7 @@
 
     .h2-card-column {
         grid-column: 1/4;
-        @include TituloSecciones;
+       
         padding-bottom: 5px;
     }
 
@@ -68,7 +68,7 @@
 
     .h2-card-row {
         grid-column: 1/4;
-        @include TituloSecciones;
+        
         padding-bottom: 5px;
     }
 

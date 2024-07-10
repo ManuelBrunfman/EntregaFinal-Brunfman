@@ -1,14 +1,21 @@
 /*variables colores*/
-$colorFondoPrincipal: #FFFFFF;
-$colorFondoSecciones: #E0E0E0;
+$colorFondoPrincipal: #1c1b1b;
+$colorFondoSecciones: #090707;
 $colorTexto: #000000;
-$colorTextoClaro: #ffffff;
-$colorBordes: #B0B0B0;
+$colorTextoClaro: #110e0e;
+$colorBordes: #0c0a0a;
 
 /*variables fuentes*/
 
 $tituloPrincipal: 2rem;
-$tituloSeccion: 1.75rem;
+$tituloSeccion: (
+    font-size: 1.75rem,  
+    color: #0b0606,         
+    font-weight: bold,    
+    padding: 8px,
+    text-align: center
+    
+);
 $fontFamily: Verdana, Geneva, Tahoma, sans-serif;
 
 
@@ -17,11 +24,7 @@ $fontFamily: Verdana, Geneva, Tahoma, sans-serif;
 
 
 /*mixin*/
-@mixin TituloSecciones (){
-    font-size: $tituloSeccion;
-    padding: 8px;
-    text-align: center;
-}
+
 @mixin size ($width: 100%, $height: null) {
     width: $width;
     height: $height;
@@ -64,4 +67,8 @@ a {
     color: $colorTexto;
 }
 
-h2 { @include TituloSecciones();}
+h2 { 
+    
+    @each $key, $value in $tituloSeccion {
+        #{$key}: $value;}
+}
