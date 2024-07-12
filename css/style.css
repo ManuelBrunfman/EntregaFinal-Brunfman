@@ -19,7 +19,7 @@ a {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
   color: #0b0606;
   font-weight: bold;
   padding: 8px;
@@ -62,6 +62,9 @@ footer {
   background-color: #1c1b1b;
   bottom: 0;
 }
+footer p {
+  color: aliceblue;
+}
 
 .nav-bar ul {
   display: grid;
@@ -69,6 +72,7 @@ footer {
 }
 .nav-bar li {
   width: 100%;
+  height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -76,9 +80,11 @@ footer {
   border: 2px solid #0c0a0a;
   transition: transform 2.5s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 900;
 }
 .nav-bar li:hover {
   background-color: #0c0a0a;
+  color: aliceblue;
   transform: scale(1.05);
 }
 
@@ -190,6 +196,7 @@ footer {
   width: 100%;
 }
 .index-mis-proyectos-contenedor .index-misproyectos-parrafos {
+  text-align: center;
   padding: 20px 0px;
 }
 

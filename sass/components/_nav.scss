@@ -6,15 +6,16 @@
     }
 
     li {
-        @include size (100%);
+        @include size (100%, 2rem);
         @include align-items-column (space-around, center);
         border: 2px solid $colorBordes;
         transition: transform 2.5s ease;
         transition: background-color 0.3s ease, color 0.3s ease; 
+        font-weight: 900;
 
         &:hover {
             background-color: $colorBordes;
-           
+            color: aliceblue;
             transform: scale(1.05);
            
         }

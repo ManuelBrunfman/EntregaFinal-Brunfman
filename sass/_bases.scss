@@ -9,13 +9,14 @@ $colorBordes: #0c0a0a;
 
 $tituloPrincipal: 2rem;
 $tituloSeccion: (
-    font-size: 1.75rem,  
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem),  
     color: #0b0606,         
     font-weight: bold,    
     padding: 8px,
     text-align: center
     
 );
+
 $fontFamily: Verdana, Geneva, Tahoma, sans-serif;
 
 
