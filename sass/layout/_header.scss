@@ -12,14 +12,13 @@ header {
 
     @include align-items-row (space-between, center);
 
-    h1 {
-        font-size: $tituloPrincipal
-    }
+
 
     ;
 
     img {
-        @include size (3rem);
+        @include size (2vw);
+        min-width: 5rem;
     }
 
     ;

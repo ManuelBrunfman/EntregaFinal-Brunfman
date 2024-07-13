@@ -23,7 +23,7 @@
         .overlay {
             position: absolute;
             @include size(100%, 100%);
-            background-color: rgba(0, 0, 0, 0.5); // Negro con 50% de opacidad
+            background-color: rgba(0, 0, 0, 0.7); // Negro con 50% de opacidad
             z-index: 5;
         }
 

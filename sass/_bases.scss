@@ -7,17 +7,23 @@ $colorBordes: #0c0a0a;
 
 /*variables fuentes*/
 
-$tituloPrincipal: 2rem;
-$tituloSeccion: (
-    font-size: clamp(1.5rem, 2vw + 1rem, 3rem),  
-    color: #0b0606,         
-    font-weight: bold,    
+$tituloPrincipal: (
+    font-size: clamp(1.5rem, 3vw + 1rem, 4rem),
+    color: #0b0606,
+    font-weight: bold,
     padding: 8px,
     text-align: center
-    
+);
+;
+$tituloSeccion: (
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem),
+    color: #0b0606,
+    font-weight: bold,
+    padding: 8px,
+    text-align: center
 );
 
-$fontFamily: Verdana, Geneva, Tahoma, sans-serif;
+$fontFamily: 'Roboto', sans-serif;
 
 
 
@@ -55,6 +61,13 @@ $fontFamily: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: $fontFamily;
+
+}
+
+
+main {
+    min-height: 100%;
 }
 
 ul,
@@ -68,8 +81,16 @@ a {
     color: $colorTexto;
 }
 
-h2 { 
-    
+h2 {
+
     @each $key, $value in $tituloSeccion {
-        #{$key}: $value;}
+        #{$key}: $value;
+    }
+}
+
+h2 {
+
+    @each $key, $value in $tituloPrincipal {
+        #{$key}: $value;
+    }
 }
