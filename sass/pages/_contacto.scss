@@ -21,6 +21,7 @@
             grid-template-rows: repeat(2, auto);
             @include gap-size (8px);
             margin-top: 4px;
+            width: 100%;
 
             input {
                 @include size (100%, 2rem)
@@ -28,7 +29,8 @@
         }
 
         .botton-form-comtacto {
-            @include size (100%, 3rem);
+            margin-top: 10px;
+            @include size (5rem, 3rem);
         }
     }
 
@@ -36,7 +38,20 @@
 @media (min-width: 768px) {
 
     .contenedor-formulario {
-
+        @include size (100%, 100%);
         padding: 5rem 10rem;
+
+    }
+
+
+    
+    .label-input-form {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        @include gap-size (8px);
+        margin-top: 4px;
+        
+
+    
     }
 }
