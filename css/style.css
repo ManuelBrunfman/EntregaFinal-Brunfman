@@ -32,12 +32,12 @@ h2 {
   text-align: center;
 }
 
-h2 {
-  font-size: clamp(1.5rem, 3vw + 1rem, 4rem);
+h1 {
+  font-size: 4vw;
   color: #0b0606;
   font-weight: bold;
   padding: 8px;
-  text-align: center;
+  text-align: start;
 }
 
 body {
@@ -62,7 +62,7 @@ header {
 }
 .h1-logo-contenedor img {
   width: 2vw;
-  min-width: 5rem;
+  min-width: 3rem;
 }
 
 @media (min-width: 768px) {

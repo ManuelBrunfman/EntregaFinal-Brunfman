@@ -8,11 +8,11 @@ $colorBordes: #0c0a0a;
 /*variables fuentes*/
 
 $tituloPrincipal: (
-    font-size: clamp(1.5rem, 3vw + 1rem, 4rem),
+    font-size: 4vw,
     color: #0b0606,
     font-weight: bold,
     padding: 8px,
-    text-align: center
+    text-align: start
 );
 ;
 $tituloSeccion: (
@@ -88,7 +88,7 @@ h2 {
     }
 }
 
-h2 {
+h1 {
 
     @each $key, $value in $tituloPrincipal {
         #{$key}: $value;
